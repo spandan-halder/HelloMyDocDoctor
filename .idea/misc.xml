@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/anim/drawable/ic_image_svgrepo_com.xml" value="0.1655" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/anim/drawable/ic_logo_hellomydoc.xml" value="0.2535" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/anim/drawable/ic_map_svgrepo_com.xml" value="0.1655" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/all_rounded_dialog.xml" value="0.30833333333333335" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/appointment_timing_background.xml" value="0.3828125" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/background_round_padded.xml" value="0.3212962962962963" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/circular_ripple.xml" value="0.22135416666666666" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/dose_selected_background.xml" value="0.3101851851851852" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/drawer_header_background.xml" value="0.3828125" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/ic_event_note_black_24dp.xml" value="0.3828125" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/ic_schedule_black_24dp.xml" value="0.3828125" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/menu_background_color_state.xml" value="0.32314814814814813" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/round_padded.xml" value="0.3212962962962963" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/show_password_selector.xml" value="0.22135416666666666" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/side_menu_background.xml" value="0.3828125" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/text_box_border.xml" value="0.3828125" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/drawable/transparent_to_semiblack_back.xml" value="0.3405" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/activity_add_prescription.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/activity_appointment_history.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/activity_prescriptions.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/activity_verify_otp.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/activity_video_calling.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/add_medicine_fragment_layout.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/appointment_view_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/confirm_logout_dialog_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/dose_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/dose_unit_dialog_layout.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/dose_values_dialog_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/drawer_header.xml" value="0.4629014396456257" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/forgot_password_layout.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/fragment_add_lab_test.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/fragment_chat_consultations.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/fragment_video_consultation.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/fragment_voice_consultation.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/loader_dialog_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/prescribed_medicine_row_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/shimmer_item_placeholder.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/unit_dialog_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/unit_item_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/layout/values_dialog_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/app/src/main/res/menu/side_navigation_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/videocalling/src/main/res/drawable/ic_baseline_call_end_24.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/videocalling/src/main/res/drawable/ic_baseline_mic_24.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/videocalling/src/main/res/drawable/ic_left.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/videocalling/src/main/res/drawable/transparent_to_semiblack_back.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/videocalling/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/videocalling/src/main/res/layout/activity_video_calling.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/HelloMyDocDoctor/videocalling/src/main/res/layout/activity_video_calling2.xml" value="0.35260416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

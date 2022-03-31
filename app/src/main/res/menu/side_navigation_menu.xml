@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:enabled="true"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home"
+            android:checked="true"/>
+        <item
+            android:id="@+id/menu_video_consultation"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_video_call_24"
+            android:title="@string/video_call"/>
+        <item
+            android:id="@+id/menu_voice_consultation"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_phone_24"
+            android:title="@string/voice_call"/>
+        <item
+            android:id="@+id/menu_chat_consultation"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_chat_24"
+            android:title="@string/chat"/>
+        <item
+            android:id="@+id/menu_prescriptions"
+            android:enabled="true"
+            android:icon="@drawable/ic_medical_prescription"
+            android:title="@string/prescriptions"
+            />
+        <item
+            android:id="@+id/menu_appointment_history"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="@string/appointment_history"
+            />
+    </group>
+    <item
+        android:id="@+id/menu_logout"
+        android:enabled="true"
+        android:icon="@drawable/ic_logout_svgrepo_com"
+        android:title="@string/logout"
+        />
+
+</menu>

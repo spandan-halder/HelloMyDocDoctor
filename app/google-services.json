@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "334678380354",
+    "project_id": "hellomydocdoctor",
+    "storage_bucket": "hellomydocdoctor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334678380354:android:683277e2cb09c98bfb42db",
+        "android_client_info": {
+          "package_name": "com.hellomydoc.doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334678380354-cl7a7eo7pbv669mrsspad5rghfngua61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYu3BDe49Tcu3AbWIiqC7L-R6BCa5fXkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334678380354-cl7a7eo7pbv669mrsspad5rghfngua61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

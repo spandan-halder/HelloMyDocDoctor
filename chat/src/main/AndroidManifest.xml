@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hellomydoc.chat">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application>
+        <activity
+            android:name="com.hellomydoc.chat.presentation.activity.ChatActivity"
+            android:exported="false"
+            android:label="ChatActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAgYjNwezx9yfpvtQPsCOY3G_g4xqQUtfU"/>
+        <meta-data
+            android:name="chat_project_id"
+            android:value="hellomydocchatapp" />
+        <meta-data
+            android:name="chat_application_id"
+            android:value="1:382660770349:android:5613c625f89579ddb616a4" />
+        <meta-data
+            android:name="chat_api_key"
+            android:value="AIzaSyC-ZXSLmQh31P7t5CE3VFwDNjtSaT1640U" />
+        <meta-data
+            android:name="chat_firebase_app_name"
+            android:value="secondary" />
+        <meta-data
+            android:name="chat_database_url"
+            android:value="https://hellomydocchatapp-default-rtdb.asia-southeast1.firebasedatabase.app/" />
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/all_rounded_dialog"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hellomydoc"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lt_gray"
+        app:layout_constraintTop_toBottomOf="@id/tv_head"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/are_you_sure_to_logout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_divider"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_yes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintTop_toBottomOf="@id/tv_message"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/bt_no"
+        android:layout_marginRight="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/no"
+        app:layout_constraintTop_toBottomOf="@id/tv_message"
+        android:layout_marginTop="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/bt_yes"
+        android:layout_marginLeft="8dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
