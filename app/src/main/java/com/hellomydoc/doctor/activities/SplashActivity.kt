@@ -5,9 +5,11 @@ import androidx.lifecycle.lifecycleScope
 import com.hellomydoc.doctor.Constants
 import com.hellomydoc.doctor.R
 import com.hellomydoc.doctor.repository
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class SplashActivity : AbstractActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

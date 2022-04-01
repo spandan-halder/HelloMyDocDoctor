@@ -108,43 +108,41 @@ class HomeActivity : AbstractActivity() {
             }
             PAGE_TYPE.ACTIVITY -> {
                 if(page==PAGE.VIDEO_CALLING){
-                    //putString(Constants.APPOINTMENT_ID_KEY,ad.id)
-                    //putString(Constants.USER_UID, repository.userUid)
-                    //putString(Constants.PEER_ID_KEY, ad.patient.id)
-                    //putString(Constants.PEER_NAME_KEY, ad.patient.name)
-                    //putString(Constants.USER_NAME, "DOCTOR")
-
-                    val appointmentId = bundle?.getString(Constants.APPOINTMENT_ID_KEY)?:return
-                    val userId = bundle.getString(Constants.USER_UID)?:return
-                    val peerId = bundle.getString(Constants.PEER_ID_KEY)?:return
-                    val peerName = bundle.getString(Constants.PEER_NAME_KEY)?:return
-                    val userName = bundle.getString(Constants.USER_NAME)?:return
-                    VideoBox.callback = object: VideoBox.Callback{
-                        override val ids: Ids
-                            get() = Ids(userId,peerId,appointmentId,userName,peerName)
-                        override val appContext: Application
-                            get() = this@HomeActivity.application
-
-                        override fun onApproving() {
-
-                        }
-
-                        override fun checkAllowed(
-                            channelId: String,
-                            userId: String
-                        ): AllowedResponse? {
-                            val startTime = System.currentTimeMillis()//DateTime(System.currentTimeMillis(), DateTimeZone.UTC).toDateTime(DateTimeZone.getDefault()).millis
-                            return AllowedResponse(true,"allowed",startTime,30000)
-                        }
-
-                    }
-                    VideoBox.start(this,appointmentId,userId)
+                    gotoVideoCall(bundle)
                 }
                 else{
                     navi().target(getActivityClass(page)).finish(false)?.bundle(bundle)?.go()
                 }
             }
         }
+    }
+
+    private fun gotoVideoCall(bundle: Bundle?) {
+        val appointmentId = bundle?.getString(Constants.APPOINTMENT_ID_KEY)?:return
+        val userId = bundle.getString(Constants.USER_UID)?:return
+        val peerId = bundle.getString(Constants.PEER_ID_KEY)?:return
+        val peerName = bundle.getString(Constants.PEER_NAME_KEY)?:return
+        val userName = bundle.getString(Constants.USER_NAME)?:return
+        VideoBox.callback = object: VideoBox.Callback{
+            override val ids: Ids
+                get() = Ids(userId,peerId,appointmentId,userName,peerName)
+            override val appContext: Application
+                get() = this@HomeActivity.application
+
+            override fun onApproving() {
+
+            }
+
+            override suspend fun checkAllowed(
+                channelId: String,
+                userId: String
+            ): AllowedResponse? {
+                val startTime = System.currentTimeMillis()//DateTime(System.currentTimeMillis(), DateTimeZone.UTC).toDateTime(DateTimeZone.getDefault()).millis
+                return AllowedResponse(true,"allowed",startTime,15*60*1000)
+            }
+
+        }
+        VideoBox.start(this,appointmentId,userId)
     }
 
     private fun getActivityClass(page: PAGE): Class<*>? {
