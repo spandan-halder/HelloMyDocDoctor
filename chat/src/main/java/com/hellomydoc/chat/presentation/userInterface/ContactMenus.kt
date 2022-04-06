@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.chatMenu
+package com.hellomydoc.chat.presentation.userInterface
 
 import android.Manifest
 import android.content.Intent
@@ -10,16 +10,15 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import androidx.core.content.ContextCompat.startActivity
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.PermissionStatus
 import com.google.accompanist.permissions.rememberPermissionState
-import com.hellomydoc.chat.ChatViewModel
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 import com.hellomydoc.chat.models.Chat
 
 
 @Composable
-fun ContactMenus(viewModel: ChatViewModel, chat: Chat,onDone: ()->Unit) {
+fun ContactMenus(viewModel: ChatViewModel, chat: Chat, onDone: ()->Unit) {
     CallMenu(viewModel,chat,onDone)
     SaveContactMenu(viewModel,chat,onDone)
     SmsMenu(viewModel, chat, onDone)

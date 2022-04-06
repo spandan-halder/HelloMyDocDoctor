@@ -61,7 +61,21 @@
             </intent-filter>
         </service>
 
+        <meta-data
+            android:name="videoAppId"
+            android:value="1d4da708a96c43999be400b49d04c172" />
+        <meta-data
+            android:name="videoAppCertificate"
+            android:value="d4c5c58005774bf1af7ae79e967c540a" />
 
+        <meta-data
+            android:name="audioAppId"
+            android:value="13622905826d46538beb9bd1d96c83b1"
+            />
+        <meta-data
+            android:name="audioAppCertificate"
+            android:value="a7138949c72440cd81607fc3edcb3f01"
+            />
     </application>
 
 </manifest>

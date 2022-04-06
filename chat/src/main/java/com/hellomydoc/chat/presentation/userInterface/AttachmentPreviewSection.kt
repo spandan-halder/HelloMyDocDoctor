@@ -1,8 +1,9 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatInput.sendSection.attachmentPreview
+package com.hellomydoc.chat.presentation.userInterface
 
 
 import androidx.compose.runtime.*
-import com.hellomydoc.chat.*
+import com.hellomydoc.chat.presentation.viewModels.AttachmentType
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun AttachmentPreviewSection(viewModel: ChatViewModel) {

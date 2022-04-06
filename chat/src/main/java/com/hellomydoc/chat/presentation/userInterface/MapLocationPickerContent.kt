@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent
+package com.hellomydoc.chat.presentation.userInterface
 
 import android.Manifest
 import androidx.compose.foundation.background
@@ -17,8 +17,7 @@ import com.google.accompanist.permissions.rememberMultiplePermissionsState
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.maps.android.compose.*
-import com.hellomydoc.chat.ChatViewModel
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun MapLocationPickerContent(viewModel: ChatViewModel) {

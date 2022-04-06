@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -8,9 +8,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.hellomydoc.chat.*
 import com.hellomydoc.chat.models.Chat
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun ColumnScope.ChatDate(viewModel: ChatViewModel, chat: Chat) {

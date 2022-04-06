@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatInput.sendSection.attachmentPreview
+package com.hellomydoc.chat.presentation.userInterface
 
 import android.net.Uri
 import androidx.compose.foundation.background
@@ -10,8 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.hellomydoc.chat.*
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun ImageAttachmentPreview(viewModel: ChatViewModel, uri: Uri?) {

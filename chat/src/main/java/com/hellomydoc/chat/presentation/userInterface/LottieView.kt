@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.annotation.RawRes
 import androidx.compose.runtime.Composable

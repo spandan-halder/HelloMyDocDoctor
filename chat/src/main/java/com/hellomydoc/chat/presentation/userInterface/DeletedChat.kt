@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
@@ -14,7 +14,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.hellomydoc.chat.models.Chat
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.userInterface.Style
 
 @Composable
 fun DeletedChat(chat: Chat) {

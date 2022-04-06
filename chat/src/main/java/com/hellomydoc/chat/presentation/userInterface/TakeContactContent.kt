@@ -12,10 +12,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import com.hellomydoc.chat.*
 import com.hellomydoc.chat.customIcons.HmdUser
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.userInterface.Style
 import com.hellomydoc.chat.presentation.userInterface.values.floatingActionButtonElevations
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable

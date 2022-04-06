@@ -22,9 +22,9 @@ import com.hellomydoc.doctor.fragments.ChatConsultationFragment
 import com.hellomydoc.doctor.fragments.HomeFragment
 import com.hellomydoc.doctor.fragments.VideoConsultationFragment
 import com.hellomydoc.doctor.fragments.VoiceConsultationFragment
-import com.hellomydoc.videocall.VideoBox
-import com.hellomydoc.videocall.models.AllowedResponse
-import com.hellomydoc.videocall.models.Ids
+import com.vxplore.audiovideocall.videocall.VideoBox
+import com.vxplore.audiovideocall.videocall.models.AllowedResponse
+import com.vxplore.audiovideocall.videocall.models.Ids
 import kotlinx.coroutines.launch
 
 class HomeActivity : AbstractActivity() {

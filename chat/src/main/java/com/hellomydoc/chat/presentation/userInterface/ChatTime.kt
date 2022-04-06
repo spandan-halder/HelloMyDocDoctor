@@ -3,7 +3,7 @@ package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageConte
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.unit.sp
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.userInterface.Style
 
 @Composable
 fun ChatTime(time: String) {

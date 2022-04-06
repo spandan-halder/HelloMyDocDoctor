@@ -4,7 +4,7 @@ import androidx.compose.material.FloatingActionButtonDefaults
 import androidx.compose.material.FloatingActionButtonElevation
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.dp
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.userInterface.Style
 
 @Composable
 fun floatingActionButtonElevations(): FloatingActionButtonElevation {

@@ -5,9 +5,8 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.hellomydoc.chat.*
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.NotFoundAnimation
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.UserNotFoundText
+import com.hellomydoc.chat.presentation.userInterface.NotFoundAnimation
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun UserIdNotFoundContent(viewModel: ChatViewModel) {

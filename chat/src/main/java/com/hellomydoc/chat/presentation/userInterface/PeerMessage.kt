@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.peerChat
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
@@ -7,11 +7,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.dp
-import com.hellomydoc.chat.ChatViewModel
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
+
 import com.hellomydoc.chat.models.Chat
-import com.hellomydoc.chat.presentation.Style
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.ChatDate
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.chatAttachment.ChatAttachment
 import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.chatTimeAndStatus.ChatTimeAndStatus
 
 @Composable

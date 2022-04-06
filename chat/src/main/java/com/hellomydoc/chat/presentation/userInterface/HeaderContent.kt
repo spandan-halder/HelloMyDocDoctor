@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.header
+package com.hellomydoc.chat.presentation.userInterface
 
 
 import androidx.compose.foundation.background
@@ -15,8 +15,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import com.hellomydoc.chat.*
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun HeaderContent(viewModel: ChatViewModel) {

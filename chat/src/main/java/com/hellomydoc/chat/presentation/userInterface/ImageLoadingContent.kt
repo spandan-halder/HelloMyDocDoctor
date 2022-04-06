@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.chatAttachment.imageAttachment
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.size
@@ -13,7 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.hellomydoc.chat.ChatViewModel
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun ImageLoadingContent(viewModel: ChatViewModel) {

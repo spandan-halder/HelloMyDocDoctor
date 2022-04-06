@@ -2,8 +2,9 @@ package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageConte
 
 
 import androidx.compose.runtime.*
-import com.hellomydoc.chat.*
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.ChatContent
+import com.hellomydoc.chat.presentation.userInterface.ChatContent
+import com.hellomydoc.chat.presentation.userInterface.PeerIdNotFoundContent
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun MainContentSection(viewModel: ChatViewModel) {

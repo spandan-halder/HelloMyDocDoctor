@@ -13,6 +13,7 @@ import com.hellomydoc.doctor.data.AppointmentData
 import com.hellomydoc.doctor.data.Profile
 import com.hellomydoc.doctor.data.resp
 import com.hellomydoc.doctor.databinding.FragmentHomeBinding
+import com.vxplore.audiovideocall.agoraaudiocall.CallBox
 import kotlinx.coroutines.launch
 
 class HomeFragment : Fragment() {
@@ -138,6 +139,7 @@ class HomeFragment : Fragment() {
                     when(it?.type?.uppercase()){
                         "VIDEO"->goToVideoCall(it)
                         "CHAT"->goToChat(it.patient.id)
+                        "VOICE"->goToVoiceCall(it)
                     }
                 }
             }
@@ -147,6 +149,17 @@ class HomeFragment : Fragment() {
                 data = appointment
             }
         }
+    }
+
+    private fun goToVoiceCall(it: AppointmentData) {
+        CallBox.start(
+            repository.userUid,
+            it.patient.id,
+            it.id,
+            requireActivity(),
+            System.currentTimeMillis(),
+            15*60*1000
+        )
     }
 
     private fun goToChat(patientId: String) {

@@ -23,8 +23,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.hellomydoc.chat.*
 import com.hellomydoc.chat.customIcons.HmdChatSend
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.userInterface.Style
 import com.hellomydoc.chat.presentation.userInterface.values.floatingActionButtonElevations
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun SendSection(viewModel: ChatViewModel) {

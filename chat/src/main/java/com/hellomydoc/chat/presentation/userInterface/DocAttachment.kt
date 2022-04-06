@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.chatAttachment
+package com.hellomydoc.chat.presentation.userInterface
 
 import android.content.Intent
 import android.net.Uri
@@ -21,8 +21,7 @@ import coil.compose.SubcomposeAsyncImage
 import com.hellomydoc.chat.*
 import com.hellomydoc.chat.R
 import com.hellomydoc.chat.models.Chat
-import com.hellomydoc.chat.presentation.Style
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.chatMenu.ChatMenu
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun DocAttachment(viewModel: ChatViewModel, chat: Chat, isMy: Boolean) {

@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectTransformGestures
@@ -13,10 +13,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import coil.compose.AsyncImage
-import com.hellomydoc.chat.*
-import com.hellomydoc.chat.presentation.Style
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.PageContent
-import kotlinx.coroutines.CoroutineScope
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun ImageViewer(viewModel: ChatViewModel) {

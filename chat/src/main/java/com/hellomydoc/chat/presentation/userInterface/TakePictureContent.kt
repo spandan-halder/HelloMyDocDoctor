@@ -10,10 +10,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.canhub.cropper.CropImageContract
 import com.canhub.cropper.options
-import com.hellomydoc.chat.*
 import com.hellomydoc.chat.customIcons.HmdCamera
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.userInterface.Style
 import com.hellomydoc.chat.presentation.userInterface.values.floatingActionButtonElevations
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun TakePictureContent(viewModel: ChatViewModel) {

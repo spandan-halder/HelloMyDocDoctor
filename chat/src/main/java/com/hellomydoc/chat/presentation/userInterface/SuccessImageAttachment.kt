@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.chatAttachment.imageAttachment
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -9,7 +9,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.SubcomposeAsyncImage
-import com.hellomydoc.chat.*
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
+
 import com.hellomydoc.chat.presentation.userInterface.values.getImageUrlById
 
 @Composable

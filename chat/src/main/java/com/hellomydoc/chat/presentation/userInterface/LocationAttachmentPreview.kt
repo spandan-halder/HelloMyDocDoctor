@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatInput.sendSection.attachmentPreview
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -10,8 +10,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.google.android.gms.maps.model.LatLng
-import com.hellomydoc.chat.*
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 import com.hellomydoc.chat.presentation.userInterface.values.getMapImage
 
 @Composable

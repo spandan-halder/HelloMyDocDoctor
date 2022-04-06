@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material.ButtonDefaults
@@ -6,9 +6,7 @@ import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
-import com.hellomydoc.chat.ChatViewModel
-import com.hellomydoc.chat.presentation.Style
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.NotFoundAnimation
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun NoConversationYet(viewModel: ChatViewModel) {

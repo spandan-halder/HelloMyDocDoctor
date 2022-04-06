@@ -7,8 +7,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.hellomydoc.chat.*
 import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.chatAttachment.UploadProgressIndicator
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 
 @Composable
 fun UploadProgressAttachment(viewModel: ChatViewModel, isMy: Boolean, progress: Int) {

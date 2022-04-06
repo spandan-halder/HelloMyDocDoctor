@@ -10,7 +10,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NamedNavArgument
 import androidx.navigation.NavType
 import androidx.navigation.navArgument
-import com.hellomydoc.chat.ChatViewModel
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 import com.hellomydoc.chat.navigation.NavRoute
 import com.hellomydoc.chat.navigation.Routes
 import com.hellomydoc.chat.presentation.userInterface.UserInterface

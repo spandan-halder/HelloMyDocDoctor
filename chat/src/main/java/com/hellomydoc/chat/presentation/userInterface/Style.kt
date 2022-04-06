@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.compose.ui.graphics.Color
 

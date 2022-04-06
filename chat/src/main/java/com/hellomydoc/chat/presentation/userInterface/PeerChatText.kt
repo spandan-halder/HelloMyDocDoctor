@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.peerChat
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -10,11 +10,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.hellomydoc.chat.ChatViewModel
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
+
 import com.hellomydoc.chat.models.Chat
-import com.hellomydoc.chat.presentation.Style
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.DeletedChat
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.chatMenu.ChatMenu
 
 @Composable
 fun PeerChatText(viewModel: ChatViewModel, chat: Chat) {

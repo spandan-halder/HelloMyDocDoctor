@@ -1,5 +1,5 @@
 
-package com.hellomydoc.chat
+package com.hellomydoc.chat.presentation.viewModels
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -12,6 +12,9 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.google.android.gms.maps.model.LatLng
+import com.hellomydoc.chat.AppDelegate
+import com.hellomydoc.chat.ChatBox
+import com.hellomydoc.chat.R
 import com.hellomydoc.chat.models.Chat
 import com.hellomydoc.chat.models.ChatPacketAttachment
 import com.hellomydoc.chat.models.ChatPacketData
@@ -290,7 +293,7 @@ class ChatViewModel @Inject constructor(
     }
 
     private fun saveUploadToken(roomId: String, chatId: String, fileId: String, uploadId: String) {
-        ChatBox.saveUploadToken(roomId, chatId,fileId,uploadId)
+        ChatBox.saveUploadToken(roomId, chatId, fileId, uploadId)
     }
 
     private fun uploadFile(file: String, roomId: String, chatId: String, fileId: String): String {
@@ -364,7 +367,11 @@ class ChatViewModel @Inject constructor(
     }
 
     fun onNewImageUri(uri: Uri, uriFilePath: String?) {
-        attachment.value = Attachment(AttachmentType.IMAGE,uri,uriFilePath)
+        attachment.value = Attachment(
+            AttachmentType.IMAGE,
+            uri,
+            uriFilePath
+        )
     }
 
     fun onClosePreviewAttachmentClick() {
@@ -372,7 +379,10 @@ class ChatViewModel @Inject constructor(
     }
 
     fun onNewFileUri(path: String) {
-        attachment.value = Attachment(AttachmentType.FILE,path=path)
+        attachment.value = Attachment(
+            AttachmentType.FILE,
+            path = path
+        )
     }
 
     @OptIn(ExperimentalMaterialApi::class)
@@ -386,7 +396,10 @@ class ChatViewModel @Inject constructor(
     }
 
     fun onMarker(latLng: LatLng?) {
-        attachment.value = Attachment(AttachmentType.LOCATION, latLng = latLng)
+        attachment.value = Attachment(
+            AttachmentType.LOCATION,
+            latLng = latLng
+        )
     }
 
     private var scope: CoroutineScope? = null
@@ -410,7 +423,10 @@ class ChatViewModel @Inject constructor(
     }
 
     fun onContactPicked(phoneNo: String, name: String) {
-        attachment.value = Attachment(AttachmentType.CONTACT, contact = Contact(name = name, phone = phoneNo))
+        attachment.value = Attachment(
+            AttachmentType.CONTACT,
+            contact = Contact(name = name, phone = phoneNo)
+        )
     }
 
     fun sayHi() {

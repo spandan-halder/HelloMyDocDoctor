@@ -9,9 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.hellomydoc.chat.ChatViewModel
-import com.hellomydoc.chat.presentation.Style
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.MainPageContent
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
+
 import com.hellomydoc.chat.presentation.userInterface.mainPageContent.ModalBottomSheetContent
 import com.hellomydoc.doctor.ui.theme.HelloMyDocDoctorTheme
 

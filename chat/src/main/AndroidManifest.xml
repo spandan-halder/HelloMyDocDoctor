@@ -12,7 +12,7 @@
 
     <application>
         <activity
-            android:name="com.hellomydoc.chat.presentation.activity.ChatActivity"
+            android:name=".presentation.activity.ChatActivity"
             android:exported="false"
             android:label="ChatActivity"
             android:windowSoftInputMode="adjustResize"/>

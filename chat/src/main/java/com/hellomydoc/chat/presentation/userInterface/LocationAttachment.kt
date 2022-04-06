@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.chatAttachment
+package com.hellomydoc.chat.presentation.userInterface
 
 import android.content.Intent
 import android.net.Uri
@@ -15,10 +15,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.google.android.gms.maps.model.LatLng
-import com.hellomydoc.chat.ChatViewModel
+import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 import com.hellomydoc.chat.models.Chat
-import com.hellomydoc.chat.presentation.Style
-import com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations.messageItem.chatMenu.ChatMenu
 import com.hellomydoc.chat.presentation.userInterface.values.getMapImage
 import kotlin.math.abs
 import kotlin.math.sign

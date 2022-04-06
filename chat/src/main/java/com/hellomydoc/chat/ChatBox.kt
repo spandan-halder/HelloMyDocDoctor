@@ -11,7 +11,7 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import com.google.firebase.database.DataSnapshot
 import com.google.gson.Gson
 import com.hellomydoc.chat.models.Chat
-import com.hellomydoc.chat.presentation.Style
+import com.hellomydoc.chat.presentation.userInterface.Style
 import com.hellomydoc.chat.uploader.CustomPlaceholdersProcessor
 import com.hellomydoc.chat.uploader.GlobalRequestObserverDelegate
 import com.hellomydoc.chat.utilities.utcTimestamp
