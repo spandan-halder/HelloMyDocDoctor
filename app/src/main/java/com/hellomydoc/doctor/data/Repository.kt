@@ -51,6 +51,14 @@ interface Apis {
     suspend fun getAppointmentsHistory(@Field("user_id") userId: String): Response<AppointmentHistoryResponse>
 
     @FormUrlEncoded
+    @POST("videoCallAllowed")
+    suspend fun checkVideoCallAllowed(
+        @Field("userId") userId: String,
+        @Field("userType") userType: String,
+        @Field("appointmentId") appointmentId: String,
+    ): Response<VideoCallAllowedResponse>
+
+    @FormUrlEncoded
     @POST("doctorAppointments/voiceUpcoming")
     suspend fun getVoiceUpcomingAppointments(@Field("user_id") userId: String): Response<AppointmentsResponse>
 
@@ -112,6 +120,8 @@ class ApiRepository {
     suspend fun submitPrescription(prescription: Prescription) = ApiService.get().submitPrescription(prescription)
     suspend fun getPrescriptions(userId: String) = ApiService.get().getPrescriptions(userId)
     suspend fun getAppointmentsHistory(userId: String) = ApiService.get().getAppointmentsHistory(userId)
+    suspend fun checkVideoCallAllowed(userId: String,userType: String,appointmentId: String) =
+        ApiService.get().checkVideoCallAllowed(userId,userType,appointmentId)
 }
 
 
@@ -185,6 +195,10 @@ class Repository {
 
     suspend fun getAppointmentsHistory(userUid: String): Response<AppointmentHistoryResponse> {
         return ApiRepository().getAppointmentsHistory(userUid)
+    }
+
+    suspend fun checkVideoCallAllowed(appointmentId: String): Response<VideoCallAllowedResponse> {
+        return ApiRepository().checkVideoCallAllowed(userUid,"DOCTOR",appointmentId)
     }
 
     var mobileVerified: Boolean

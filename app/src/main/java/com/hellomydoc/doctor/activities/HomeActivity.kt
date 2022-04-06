@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
@@ -26,6 +27,17 @@ import com.vxplore.audiovideocall.videocall.VideoBox
 import com.vxplore.audiovideocall.videocall.models.AllowedResponse
 import com.vxplore.audiovideocall.videocall.models.Ids
 import kotlinx.coroutines.launch
+import org.joda.time.DateTime
+import org.joda.time.DateTimeZone
+
+private val Long.utcToCurrentTimeZoneMillis: Long
+    get() {
+        return try {
+            DateTime(this,DateTimeZone.UTC).toDateTime(DateTimeZone.getDefault()).millis
+        } catch (e: Exception) {
+            0
+        }
+    }
 
 class HomeActivity : AbstractActivity() {
     data class ChildCallback(
@@ -137,7 +149,28 @@ class HomeActivity : AbstractActivity() {
                 channelId: String,
                 userId: String
             ): AllowedResponse? {
-                val startTime = System.currentTimeMillis()//DateTime(System.currentTimeMillis(), DateTimeZone.UTC).toDateTime(DateTimeZone.getDefault()).millis
+                val r = repository.checkVideoCallAllowed(appointmentId).resp
+                if(r.body?.success==true){
+                    val startTime = (r.body?.startTime?:return null).utcToCurrentTimeZoneMillis
+                    val timeSpan = r.body?.timeSpan?:return null
+                    val endTime = startTime + timeSpan
+                    val now = System.currentTimeMillis()
+                    val left = endTime - now
+                    return when {
+                        left<=0 -> {
+                            Toast.makeText(this@HomeActivity, "Time crossed", Toast.LENGTH_SHORT).show()
+                            null
+                        }
+                        startTime>now -> {
+                            Toast.makeText(this@HomeActivity, "Can not proceed before schedule", Toast.LENGTH_SHORT).show()
+                            null
+                        }
+                        else -> {
+                            AllowedResponse(true,"allowed",startTime,timeSpan)
+                        }
+                    }
+                }
+                val startTime = System.currentTimeMillis()
                 return AllowedResponse(true,"allowed",startTime,15*60*1000)
             }
 
