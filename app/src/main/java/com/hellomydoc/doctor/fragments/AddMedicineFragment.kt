@@ -3,7 +3,10 @@ package com.hellomydoc.doctor.fragments
 import android.content.Context
 import android.os.Bundle
 import android.text.TextWatcher
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.view.WindowManager
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
@@ -65,7 +68,7 @@ class AddMedicineFragment : Fragment() {
         "Unit",
     )
 
-    private var timeUnits = listOf(
+    private var timeUnits: List<String>? = listOf(
         "Day(s)",
         "Week(s)",
         "Month(s)",
@@ -73,7 +76,7 @@ class AddMedicineFragment : Fragment() {
         "Minute(s)"
     )
 
-    private var doses = listOf(
+    private var doses: List<String>? = listOf(
         "BDAC",
         "BDPC",
         "ODPC",
@@ -290,7 +293,10 @@ class AddMedicineFragment : Fragment() {
                 val btDone = findViewById<View>(R.id.bt_done)
                 val etInput = findViewById<EditText>(R.id.et_input)
                 val alvUnits = findViewById<AnyListView>(R.id.alv_units)
-                fun showUnits(units: List<String>){
+                fun showUnits(units: List<String>?){
+                    if(units==null){
+                        return
+                    }
                     alvUnits.configure(
                         AnyListView.Configurator(
                             noItemText = getString(R.string.no_items_matched),
@@ -327,7 +333,7 @@ class AddMedicineFragment : Fragment() {
                     else{
                         btDone.visibility = View.VISIBLE
                         showUnits(
-                            timeUnits.filter {
+                            timeUnits?.filter {
                                 it.lowercase().contains(q.lowercase())
                             }
                         )
@@ -725,7 +731,7 @@ class AddMedicineFragment : Fragment() {
         binding.alvDoses.configure(
             AnyListView.Configurator(
                 state = AnyListView.STATE.DATA,
-                itemCount = {doses.size},
+                itemCount = {doses?.size?:0},
                 itemType = {
                     it
                 },
@@ -733,8 +739,8 @@ class AddMedicineFragment : Fragment() {
                 layoutId = {R.layout.dose_layout},
                 viewId = {R.id.bt_dose},
                 onView = {pos,view->
-                    (view as? TextView)?.text = doses.getOrNull(pos)
-                    if(doses.getOrNull(pos)==selected){
+                    (view as? TextView)?.text = doses?.getOrNull(pos)
+                    if(doses?.getOrNull(pos)==selected){
                         (view as? TextView)?.apply {
                             background = R.drawable.dose_selected_background.drawable()
                             setTextColor(android.graphics.Color.WHITE)
@@ -755,7 +761,7 @@ class AddMedicineFragment : Fragment() {
                         selected = (view as? TextView)?.text.toString()
                         onDoseChanged((view as? TextView)?.text.toString())
                         if(prev.isNotEmpty){
-                            binding.alvDoses.notifyItemChanged(doses.indexOf(prev))
+                            binding.alvDoses.notifyItemChanged(doses?.indexOf(prev)?:return@setOnClickListener)
                         }
                     }
                 },
@@ -767,7 +773,7 @@ class AddMedicineFragment : Fragment() {
                         CustomItemDecorator().apply{
                                 itemOffsetter = { pos, rect ->
                                     val spacing = 8.dpToPx
-                                    if (pos < doses.size) {
+                                    if (pos < doses?.size?:0) {
                                         rect.right = spacing
                                     }
                                 }

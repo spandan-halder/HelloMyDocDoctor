@@ -1,7 +1,9 @@
 package com.hellomydoc.doctor.data
 
-import com.hellomydoc.doctor.Dt
 import com.hellomydoc.doctor.customViews.toShortGender
+import org.joda.time.DateTime
+import org.joda.time.DateTimeZone
+import org.joda.time.format.DateTimeFormat
 
 data class Patient(
     val id: String,
@@ -29,7 +31,10 @@ data class AppointmentData(
     val date: String
         get(){
             return if(timestamp!=null){
-                Dt.millis_to_date(timestamp.toLong(),"EEE, MMM d, yyyy")
+                //Dt.millis_to_date(timestamp.toLong(),"EEE, MMM d, yyyy")
+                val df = DateTimeFormat.forPattern("EEE, MMM d, yyyy")
+                val dt = DateTime(timestamp.toLong(), DateTimeZone.UTC)
+                df.print(dt)
             } else{
                 ""
             }
@@ -37,7 +42,10 @@ data class AppointmentData(
     val time: String
         get(){
             return if(timestamp!=null){
-                Dt.millis_to_date(timestamp.toLong(),"K:mm a")
+                //Dt.millis_to_date(timestamp.toLong(),"K:mm a")
+                val df = DateTimeFormat.forPattern("HH:mm a")
+                val dt = DateTime(timestamp.toLong(), DateTimeZone.UTC)
+                df.print(dt)
             } else{
                 ""
             }
