@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
@@ -149,7 +148,7 @@ class HomeActivity : AbstractActivity() {
                 channelId: String,
                 userId: String
             ): AllowedResponse? {
-                val r = repository.checkVideoCallAllowed(appointmentId).resp
+                /*val r = repository.checkVideoCallAllowed(appointmentId).resp
                 if(r.body?.success==true){
                     val startTime = (r.body?.startTime?:return null).utcToCurrentTimeZoneMillis
                     val timeSpan = r.body?.timeSpan?:return null
@@ -169,7 +168,7 @@ class HomeActivity : AbstractActivity() {
                             AllowedResponse(true,"allowed",startTime,timeSpan)
                         }
                     }
-                }
+                }*/
                 val startTime = System.currentTimeMillis()
                 return AllowedResponse(true,"allowed",startTime,15*60*1000)
             }
