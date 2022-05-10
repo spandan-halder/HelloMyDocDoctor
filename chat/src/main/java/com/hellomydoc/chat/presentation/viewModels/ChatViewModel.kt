@@ -79,7 +79,7 @@ class ChatViewModel @Inject constructor(
     val myId = mutableStateOf("")
     val peerId = mutableStateOf("")
     val chats = mutableStateListOf<Chat>()
-    var state:LazyListState? = LazyListState()
+    var state:LazyListState = LazyListState()
     val chatIdsToShowDate = mutableMapOf<String,String>()
     private var chatBox: ChatBox? = null
 
@@ -114,7 +114,6 @@ class ChatViewModel @Inject constructor(
     fun onStop() {
         scope = null
         modalBottomSheetState = null
-        state = null
     }
 
     @OptIn(ExperimentalMaterialApi::class)

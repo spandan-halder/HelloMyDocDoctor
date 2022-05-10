@@ -1,4 +1,4 @@
-package com.hellomydoc.chat.presentation.userInterface.mainPageContent.pageContent.mainContent.chatContent.chatsSection.conversations
+package com.hellomydoc.chat.presentation.userInterface
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -12,7 +12,7 @@ import com.hellomydoc.chat.presentation.viewModels.ChatViewModel
 fun Conversations(viewModel: ChatViewModel) {
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
-        state = viewModel.state!!
+        state = viewModel.state
     ){
         items(viewModel.chats){
             MessageItem(viewModel,it)
