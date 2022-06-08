@@ -44,6 +44,9 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         fetchProfile()
         setupUpcomingAppointments()
+        binding.tvViewAll.setOnClickListener {
+            childCallback?.goToPage?.invoke(PAGE.HOME, PAGE.APPOINTMENT_HISTORY,null)
+        }
     }
 
     private fun fetchProfile() {

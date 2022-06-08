@@ -6,15 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.hellomydoc.doctor.R
+import com.hellomydoc.doctor.*
 import com.hellomydoc.doctor.activities.HomeActivity
 import com.hellomydoc.doctor.customViews.AppointmentView
 import com.hellomydoc.doctor.data.AppointmentData
 import com.hellomydoc.doctor.data.resp
 import com.hellomydoc.doctor.databinding.FragmentChatConsultationsBinding
-import com.hellomydoc.doctor.repository
-import com.hellomydoc.doctor.toast
-import com.hellomydoc.doctor.toastLong
 import kotlinx.coroutines.launch
 
 class ChatConsultationFragment : Fragment() {
@@ -88,6 +85,11 @@ class ChatConsultationFragment : Fragment() {
             AppointmentView(requireContext()).apply {
                 layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT)
                 data = appointment
+                addPrescriptionCallback = {
+                    childCallback?.goToPage?.invoke(PAGE.HOME, PAGE.ADD_PRESCRIPTION,Bundle().apply {
+                        putString(Constants.APPOINTMENT_ID_KEY,it?.id?:"")
+                    })
+                }
             }
         }
     }
